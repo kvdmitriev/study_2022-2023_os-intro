@@ -1,0 +1,189 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Дмитриев Владимир Константинович</li>
+<li>Студент</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1132239400@pfur.ru">1132239400@pfur.ru</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+<h2 id="цель">Цель</h2>
+<p>Изучить идеологию и применение средств контроля версий. Освоить
+умения по работе с git</p>
+<h2 id="задачи">Задачи</h2>
+<p>Создать базовую конфигурацию для работы с git. Создать ключ SSH.
+Создать ключ PGP. Настроить подписи git. Зарегистрироваться на Github.
+Создать локальный каталог для выполнения заданий по предмету.</p>
+<h2 id="установка-git">Установка git</h2>
+<p>Для начала установим git. В моём случае он уже установлен</p>
+<figure>
+<img src="image/1.png" alt="Установка git" />
+<figcaption aria-hidden="true">Установка git</figcaption>
+</figure>
+<h2 id="установка-gh">Установка gh</h2>
+<p>Теперь установим gh</p>
+<figure>
+<img src="image/2.png" style="height:60.0%" alt="Установка gh" />
+<figcaption aria-hidden="true">Установка gh</figcaption>
+</figure>
+<h2 id="базовая-настройка-git">Базовая настройка git</h2>
+<p>Далее, зададим имя для владельца репозитория. В данном случае это моё
+имя</p>
+<figure>
+<img src="image/3.png" alt="Указание имени" />
+<figcaption aria-hidden="true">Указание имени</figcaption>
+</figure>
+<h2 id="базовая-настройка-git-1">Базовая настройка git</h2>
+<p>Теперь зададим почту. Я задал почту, на которую у меня
+зарегистрирован аккаунт на github</p>
+<figure>
+<img src="image/4.png" alt="Указание почты" />
+<figcaption aria-hidden="true">Указание почты</figcaption>
+</figure>
+<h2 id="базовая-настройка-git-2">Базовая настройка git</h2>
+<p>Настроим кодировку utf8 в выводе сообщений git</p>
+<figure>
+<img src="image/4_1.png" alt="Настройка кодировки utf8" />
+<figcaption aria-hidden="true">Настройка кодировки utf8</figcaption>
+</figure>
+<h2 id="базовая-настройка-git-3">Базовая настройка git</h2>
+<p>Зададим имя начальной ветки, настроим параметры autocrlf и
+safecrlf</p>
+<figure>
+<img src="image/5.png" alt="Настройка git" />
+<figcaption aria-hidden="true">Настройка git</figcaption>
+</figure>
+<h2 id="создание-ключа-ssh">Создание ключа ssh</h2>
+<p>Создадим ключ RSA размером 4096 бит</p>
+<figure>
+<img src="image/6.png" style="height:60.0%" alt="Создание ключа RSA" />
+<figcaption aria-hidden="true">Создание ключа RSA</figcaption>
+</figure>
+<h2 id="создание-ключа-ssh-1">Создание ключа ssh</h2>
+<p>Теперь создадим ключ по алгоритму ed22519</p>
+<figure>
+<img src="image/7.png" style="height:60.0%"
+alt="Создание ключа ed22519" />
+<figcaption aria-hidden="true">Создание ключа ed22519</figcaption>
+</figure>
+<h2 id="создание-ключа-pgp">Создание ключа pgp</h2>
+<p>Теперь создадим ключ gpg. Выбираем из предложенных вариантов первый
+тип (RSA and RSA), размер ключа задаём 4096 бит и делаем срок действия
+ключа неограниченным</p>
+<figure>
+<img src="image/8.png" style="height:60.0%"
+alt="оздание ключа pgp (1)" />
+<figcaption aria-hidden="true">оздание ключа pgp (1)</figcaption>
+</figure>
+<h2 id="создание-ключа-pgp-1">Создание ключа pgp</h2>
+<p>После нас попросят ввести свои данные. Мы вводим имя и адрес
+электронной почты. После этого соглашаемся с генерацией ключа</p>
+<figure>
+<img src="image/9.png" style="height:60.0%"
+alt="оздание ключа pgp (2)" />
+<figcaption aria-hidden="true">оздание ключа pgp (2)</figcaption>
+</figure>
+<h2 id="добавление-pgp-ключа-в-github">Добавление PGP ключа в
+GitHub</h2>
+<p>Далее, выводим список pgp ключей</p>
+<figure>
+<img src="image/10.png" style="height:60.0%" alt="Список pgp ключей" />
+<figcaption aria-hidden="true">Список pgp ключей</figcaption>
+</figure>
+<h2 id="добавление-pgp-ключа-в-github-1">Добавление PGP ключа в
+GitHub</h2>
+<p>Копируем наш ключ в буфер обмена</p>
+<figure>
+<img src="image/11.png" alt="Копирование ключа" />
+<figcaption aria-hidden="true">Копирование ключа</figcaption>
+</figure>
+<h2 id="добавление-pgp-ключа-в-github-2">Добавление PGP ключа в
+GitHub</h2>
+<p>Вставляем этот ключ на гитхаб, и задаём ему имя. Я выбрал имя
+Sway</p>
+<figure>
+<img src="image/12.png" style="height:60.0%"
+alt="Вставка ключа в GitHub" />
+<figcaption aria-hidden="true">Вставка ключа в GitHub</figcaption>
+</figure>
+<h2 id="настройка-автоматических-подписей-коммитов-git">Настройка
+автоматических подписей коммитов git</h2>
+<p>Теперь производим настройку автоматических подписей</p>
+<figure>
+<img src="image/13.png"
+alt="Настройка автоматических подписей коммитов git" />
+<figcaption aria-hidden="true">Настройка автоматических подписей
+коммитов git</figcaption>
+</figure>
+<h2 id="настройка-gh">Настройка gh</h2>
+<p>После, нам нужно авторизоваться в github с помощью gh. Мы выбираем
+сайт для авторизации (GitHub.com), после выбираем предпочитаемый
+протокол (SSH), публичный SSH ключ (id_rsa.pub), и имя для ключа (Sway).
+В качестве способа авторизации выбираем авторизацию через браузер</p>
+<figure>
+<img src="image/14.png" style="height:45.0%" alt="Авторизация в gh" />
+<figcaption aria-hidden="true">Авторизация в gh</figcaption>
+</figure>
+<h2 id="сознание-репозитория-курса-на-основе-шаблона">Сознание
+репозитория курса на основе шаблона</h2>
+<p>Теперь создаём рабочую директорию курса и переходим в неё</p>
+<figure>
+<img src="image/15.png"
+alt="Создание рабочей директории и переход в неё" />
+<figcaption aria-hidden="true">Создание рабочей директории и переход в
+неё</figcaption>
+</figure>
+<h2 id="сознание-репозитория-курса-на-основе-шаблона-1">Сознание
+репозитория курса на основе шаблона</h2>
+<p>Далее, создаём репозиторий для лабораторных работ из шаблона</p>
+<figure>
+<img src="image/16.png" alt="Сознание репозитория курса" />
+<figcaption aria-hidden="true">Сознание репозитория курса</figcaption>
+</figure>
+<h2 id="сознание-репозитория-курса-на-основе-шаблона-2">Сознание
+репозитория курса на основе шаблона</h2>
+<p>И клонируем его к себе на компьютер</p>
+<figure>
+<img src="image/17.png" alt="Клонирование репозитория" />
+<figcaption aria-hidden="true">Клонирование репозитория</figcaption>
+</figure>
+<h2 id="настройка-каталога-курса">Настройка каталога курса</h2>
+<p>Переходим в него с помощью cd и удаляем ненужные файлы (package.json)
+и создаём необходимые каталоги, записав в файл COURSE строку os-intro
+(это наш текущий курс) и прописываем make prepare для того, чтобы нужные
+нам каталоги создались</p>
+<figure>
+<img src="image/18.png" style="height:45.0%"
+alt="Удаление ненужных файлов и использование make" />
+<figcaption aria-hidden="true">Удаление ненужных файлов и использование
+make</figcaption>
+</figure>
+<h2 id="настройка-каталога-курса-1">Настройка каталога курса</h2>
+<p>Теперь добавляем нашу папку для отправки</p>
+<figure>
+<img src="image/19.png" alt="Использование git add" />
+<figcaption aria-hidden="true">Использование git add</figcaption>
+</figure>
+<h2 id="настройка-каталога-курса-2">Настройка каталога курса</h2>
+<p>Делаем коммит, в котором указываем, что мы сделали структуру
+курса</p>
+<figure>
+<img src="image/20.png" style="height:60.0%"
+alt="Использование git commit" />
+<figcaption aria-hidden="true">Использование git commit</figcaption>
+</figure>
+<h2 id="настройка-каталога-курса-3">Настройка каталога курса</h2>
+<p>И отправляем файлы на сервер GitHub с помощью команды push</p>
+<figure>
+<img src="image/21.png" alt="Использование git push" />
+<figcaption aria-hidden="true">Использование git push</figcaption>
+</figure>
+<h2 id="выводы">Выводы</h2>
+<p>Была произведена установка git, проведена его первоначальная
+настройка, были созданы ключи для авторизации и подписи, а также создан
+репозиторий курса из предложенного шаблона</p>

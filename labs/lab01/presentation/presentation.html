@@ -1,0 +1,285 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Дмитриев Владимир Константинович</li>
+<li>Студент</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1132239400@pfur.ru">1132239400@pfur.ru</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+<h2 id="цель">Цель</h2>
+<p>Целью данной работы является приобретение практических навыков
+установки операционной системы на виртуальную машину, настройки
+минимально необходимых для дальнейшей работы сервисов.</p>
+<h2 id="задание">Задание</h2>
+<p>Установка операционной системы<br />
+Установка драйверов для VirtualBox<br />
+Настройка раскладки клавиатуры<br />
+Установка имени пользователя и названия хоста<br />
+Подключение общей папки<br />
+Установка программного обеспечения для создания документации<br />
+Домашнее задание</p>
+<h2 id="установка-fedora-sway">Установка Fedora Sway</h2>
+<p>Для начала создадим виртуальную машину. Укажем имя ВМ и адрес к
+загрузочному носителю</p>
+<figure>
+<img src="image/1.png" style="height:66.0%"
+alt="Указание имени ВМ и адреса к загрузочному носителю" />
+<figcaption aria-hidden="true">Указание имени ВМ и адреса к загрузочному
+носителю</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-1">Установка Fedora Sway</h2>
+<p>Далее выделим память и количество ядер процессора</p>
+<figure>
+<img src="image/2.png" style="height:66.0%"
+alt="Выделение памяти и ядер" />
+<figcaption aria-hidden="true">Выделение памяти и ядер</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-2">Установка Fedora Sway</h2>
+<p>Выделим виртуальный диск размером в 80гб</p>
+<figure>
+<img src="image/3.png" style="height:66.0%" alt="Выделение диска" />
+<figcaption aria-hidden="true">Выделение диска</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-3">Установка Fedora Sway</h2>
+<p>Включим 3D ускорение</p>
+<figure>
+<img src="image/4.png" style="height:66.0%"
+alt="Включение 3Д ускорения" />
+<figcaption aria-hidden="true">Включение 3Д ускорения</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-4">Установка Fedora Sway</h2>
+<p>Запустим виртуальную машину и запустим установщик liveinst</p>
+<figure>
+<img src="image/5.png" style="height:66.0%" alt="Запуск liveinst" />
+<figcaption aria-hidden="true">Запуск liveinst</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-5">Установка Fedora Sway</h2>
+<p>Выберем язык</p>
+<figure>
+<img src="image/6.png" style="height:66.0%" alt="Выбор языка" />
+<figcaption aria-hidden="true">Выбор языка</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-6">Установка Fedora Sway</h2>
+<p>И укажем диск для установки</p>
+<figure>
+<img src="image/7.png" style="height:66.0%"
+alt="ВЫбор диска для установки" />
+<figcaption aria-hidden="true">ВЫбор диска для установки</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-7">Установка Fedora Sway</h2>
+<p>Включим root пользователя и укажем для него пароль</p>
+<figure>
+<img src="image/8.png" style="height:66.0%"
+alt="Настройка рут пользователя" />
+<figcaption aria-hidden="true">Настройка рут пользователя</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-8">Установка Fedora Sway</h2>
+<p>Создадим свою учётную запись, укажем имя пользователя, согласно
+соглашению об именовании и укажем пароль</p>
+<figure>
+<img src="image/9.png" style="height:66.0%"
+alt="Настройка собственной учётной записи" />
+<figcaption aria-hidden="true">Настройка собственной учётной
+записи</figcaption>
+</figure>
+<h2 id="установка-fedora-sway-9">Установка Fedora Sway</h2>
+<p>После начнётся этап загрузки, после которого мы можем изъять
+загрузочный диск из ВМ</p>
+<figure>
+<img src="image/10.png" style="height:66.0%"
+alt="Изъятие загрузочного диска" />
+<figcaption aria-hidden="true">Изъятие загрузочного диска</figcaption>
+</figure>
+<h2 id="переход-в-режим-суперпользователя">Переход в режим
+суперпользователя</h2>
+<p>Далее загрузим ВМ и перейдём в режим суперпользователя</p>
+<figure>
+<img src="image/11.png" style="height:66.0%"
+alt="Переход в суперпользователя" />
+<figcaption aria-hidden="true">Переход в суперпользователя</figcaption>
+</figure>
+<h2 id="обновление-всех-пакетов">Обновление всех пакетов</h2>
+<p>Обновим все пакеты с помощью dnf</p>
+<figure>
+<img src="image/12.png" style="height:66.0%" alt="Обновление пакетов" />
+<figcaption aria-hidden="true">Обновление пакетов</figcaption>
+</figure>
+<h2 id="повышение-комфорта-работы">Повышение комфорта работы</h2>
+<p>Установим mc и tmux с помощью dnf. Все остальные программы также в
+основном устанавливаются через dnf</p>
+<figure>
+<img src="image/13.png" style="height:66.0%"
+alt="Установка mc и tmux" />
+<figcaption aria-hidden="true">Установка mc и tmux</figcaption>
+</figure>
+<h2 id="включение-автообновления">Включение автообновления</h2>
+<p>Установим dnf-automatic</p>
+<figure>
+<img src="image/14.png" style="height:66.0%"
+alt="Установка dnf-automatic" />
+<figcaption aria-hidden="true">Установка dnf-automatic</figcaption>
+</figure>
+<h2 id="включение-автообновления-1">Включение автообновления</h2>
+<p>Включим сценарий автообновления</p>
+<figure>
+<img src="image/15.png" style="height:66.0%"
+alt="Включение сценария автообновления" />
+<figcaption aria-hidden="true">Включение сценария
+автообновления</figcaption>
+</figure>
+<h2 id="отключение-selinux">Отключение SELinux</h2>
+<p>Отключим SELinux, отредактировав файл /etc/selinux/config следующим
+образом</p>
+<figure>
+<img src="image/16.png" style="height:66.0%" alt="Отключение SELinux" />
+<figcaption aria-hidden="true">Отключение SELinux</figcaption>
+</figure>
+<h2 id="установка-драйверов-для-virtualbox">Установка драйверов для
+VirtualBox</h2>
+<p>Запустим tmux</p>
+<figure>
+<img src="image/17.png" style="height:66.0%" alt="Запуск tmux" />
+<figcaption aria-hidden="true">Запуск tmux</figcaption>
+</figure>
+<h2 id="установка-драйверов-для-virtualbox-1">Установка драйверов для
+VirtualBox</h2>
+<p>Перейдём в режим root</p>
+<figure>
+<img src="image/18.png" style="height:66.0%"
+alt="Переход в режим рут" />
+<figcaption aria-hidden="true">Переход в режим рут</figcaption>
+</figure>
+<h2 id="установка-драйверов-для-virtualbox-2">Установка драйверов для
+VirtualBox</h2>
+<p>Установим Development Tools</p>
+<figure>
+<img src="image/19.png" style="height:66.0%"
+alt="Установка Development Tools" />
+<figcaption aria-hidden="true">Установка Development Tools</figcaption>
+</figure>
+<h2 id="установка-драйверов-для-virtualbox-3">Установка драйверов для
+VirtualBox</h2>
+<p>Установим dkms</p>
+<figure>
+<img src="image/20.png" style="height:66.0%" alt="Установка dkms" />
+<figcaption aria-hidden="true">Установка dkms</figcaption>
+</figure>
+<h2 id="установка-драйверов-для-virtualbox-4">Установка драйверов для
+VirtualBox</h2>
+<p>Теперь подключим образ диска дополнений гостевой ОС</p>
+<figure>
+<img src="image/21.png" style="height:66.0%"
+alt="Подключение образа диска дополнений гостевой ОС" />
+<figcaption aria-hidden="true">Подключение образа диска дополнений
+гостевой ОС</figcaption>
+</figure>
+<h2 id="установка-драйверов-для-virtualbox-5">Установка драйверов для
+VirtualBox</h2>
+<p>Примонтируем его и запустим скрипт-установщик</p>
+<figure>
+<img src="image/22.png" style="height:66.0%"
+alt="Монтирование диска и запуск установщика" />
+<figcaption aria-hidden="true">Монтирование диска и запуск
+установщика</figcaption>
+</figure>
+<h2 id="настройка-раскладки-клавиатуры">Настройка раскладки
+клавиатуры</h2>
+<p>Создадим файл конфигурации клавиатуры</p>
+<figure>
+<img src="image/23.png" style="height:66.0%"
+alt="Создание файла конфигурации клавиатуры" />
+<figcaption aria-hidden="true">Создание файла конфигурации
+клавиатуры</figcaption>
+</figure>
+<h2 id="настройка-раскладки-клавиатуры-1">Настройка раскладки
+клавиатуры</h2>
+<p>Вставим в него предложенный текст</p>
+<figure>
+<img src="image/24.png" style="height:66.0%" alt="Вставка текста" />
+<figcaption aria-hidden="true">Вставка текста</figcaption>
+</figure>
+<h2 id="настройка-раскладки-клавиатуры-2">Настройка раскладки
+клавиатуры</h2>
+<p>Теперь поменяем настройки клавиатуры на следующие</p>
+<figure>
+<img src="image/25.png" style="height:66.0%"
+alt="Смена настроек клавиатуры" />
+<figcaption aria-hidden="true">Смена настроек клавиатуры</figcaption>
+</figure>
+<h2 id="установка-названия-хоста">Установка названия хоста</h2>
+<p>Теперь поменяем название хоста, согласно соглашению об именовании с
+помощью hostnamectl</p>
+<figure>
+<img src="image/26.png" style="height:66.0%" alt="Смена имени хоста" />
+<figcaption aria-hidden="true">Смена имени хоста</figcaption>
+</figure>
+<h2 id="подключение-общей-папки">Подключение общей папки</h2>
+<p>Добавим нашего пользователя в группу vboxsf</p>
+<figure>
+<img src="image/27.png" style="height:66.0%"
+alt="Добавление пользователя в группу" />
+<figcaption aria-hidden="true">Добавление пользователя в
+группу</figcaption>
+</figure>
+<h2 id="подключение-общей-папки-1">Подключение общей папки</h2>
+<p>Создадим общую папку в терминале хост машины (в данном случае
+Windows), укажем путь к общей папке (C:/work) и название нашей ВМ
+(Sway)</p>
+<figure>
+<img src="image/28.png" style="height:66.0%"
+alt="Создание общей папки" />
+<figcaption aria-hidden="true">Создание общей папки</figcaption>
+</figure>
+<h2
+id="установка-программного-обеспечения-для-создания-документации">Установка
+программного обеспечения для создания документации</h2>
+<p>Теперь установим pandoc</p>
+<figure>
+<img src="image/29.png" style="height:66.0%" alt="Установка pandoc" />
+<figcaption aria-hidden="true">Установка pandoc</figcaption>
+</figure>
+<h2
+id="установка-программного-обеспечения-для-создания-документации-1">Установка
+программного обеспечения для создания документации</h2>
+<p>Скачаем pandoc-crossref, распакуем его с помощью tar, и перенесём в
+папку usr/local/bin</p>
+<figure>
+<img src="image/30.png" style="height:66.0%"
+alt="Установка pandoc-crossref" />
+<figcaption aria-hidden="true">Установка pandoc-crossref</figcaption>
+</figure>
+<h2
+id="установка-программного-обеспечения-для-создания-документации-2">Установка
+программного обеспечения для создания документации</h2>
+<p>Установим texlive</p>
+<figure>
+<img src="image/31.png" style="height:66.0%" alt="Установка texlive" />
+<figcaption aria-hidden="true">Установка texlive</figcaption>
+</figure>
+<h2 id="домашнее-задание">Домашнее задание</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:60%;">
+<p>Теперь с помощью dmesg получим следующую инофрмацию:<br />
+Версия ядра Linux (Linux version). – 6.7.4, Частота процессора (Detected
+Mhz processor). – 2188Mhz, Модель процессора (CPU0). – Core i5-1340P,
+Объём доступной оперативной памяти (Memory available). - ~6гб, Тип
+обнаруженного гипервизора (Hypervisor detected). - KVM</p>
+</div><div class="column" style="width:30%;">
+<p><img src="image/32.png" style="height:80.0%" /></p>
+</div>
+</div>
+<h2 id="домашнее-задание-1">Домашнее задание</h2>
+<p>Тип файловой системы корневого раздела - BTRFS Последовательность
+монтирования файловых систем: BTRFS (раздел sda3) и EXT4-fs (Раздел
+sda2)</p>
+<p><img src="image/33.png" style="height:66.0%" /></p>
+<h2 id="выводы">Выводы</h2>
+<p>Были получены навыки работы в системе Fedora Sway, была проведена
+установка системы, установлены необходимые для последующей работы пакеты
+и произведена базовая настройка системы</p>
